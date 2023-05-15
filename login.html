@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>VroomVroom registration</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="main.js"></script>
+</head>
+<body>
+  <div class="container_1">
+    <div id="registrationFormContainer">
+      <h2>Registration</h2>
+      <form name="registrationForm" onsubmit="return validateRegistration()">
+        <label for="regUsername">Login:</label>
+        <input type="text" id="regUsername" name="regUsername" required><br><br>
+        
+        <label for="regPassword">Password:</label>
+        <input type="password" id="regPassword" name="regPassword" minlength="8" required><br><br>
+        
+        <label for="confirmPassword">Repeat password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" minlength="8" required><br><br>
+        
+        <input type="submit" value="Зарегистрироваться">
+      </form>
+    </div>
+    
+    <div id="loginFormContainer" style="display: none;">
+      <h2>Sign in</h2>
+      <form name="loginForm" onsubmit="return validateLogin()">
+        <label for="loginUsername">Login:</label>
+        <input type="text" id="loginUsername" name="loginUsername" required><br><br>
+        
+        <label for="loginPassword">Password:</label>
+        <input type="password" id="loginPassword" name="loginPassword" required><br><br>
+        
+        <input type="submit" value="Войти">
+      </form>
+    </div>
+  </div>
+</body>
+</html>
